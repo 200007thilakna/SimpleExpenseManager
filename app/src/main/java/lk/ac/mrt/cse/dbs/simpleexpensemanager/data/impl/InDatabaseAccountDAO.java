@@ -100,6 +100,7 @@ public class InDatabaseAccountDAO implements AccountDAO {
     @Override
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
 
+
         Account account = getAccount(accountNo);
 
         double balance = account.getBalance();
